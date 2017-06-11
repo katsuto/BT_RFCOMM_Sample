@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/textViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status_none"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textViewTReceivedData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Received Data"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/textViewReceivedData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data_none"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textViewTSendData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Data"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <TextView
+            android:id="@+id/textViewSendData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Data"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textViewTAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address (6 chars)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="005010"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/textViewTLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Length (4 chars)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <EditText
+            android:id="@+id/editTextLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="0002"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/textViewTData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data (4 * Length chars)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+        <EditText
+            android:id="@+id/editTextData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="ABCDABCD"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <Button
+            android:id="@+id/buttonRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonRead_onClick"
+            android:text="READ" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonSend_onClick"
+            android:text="Send" />
+
+        <Button
+            android:id="@+id/buttonDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="buttonDefault_onClick"
+            android:text="Default" />
+
+        <TextView
+            android:id="@+id/textViewTTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Target Device" />
+
+        <EditText
+            android:id="@+id/editTextTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="raspberrypi" />
+    </LinearLayout>
+</ScrollView>
+
